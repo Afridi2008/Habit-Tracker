@@ -6,7 +6,7 @@
   "orientation": "portrait",
   "scope": "/Habit-Tracker/",
   "short_name": "Sirat",
-  "start_url": "/Habit-Tracker",
+  "start_url": "/",
   "theme_color": "#ffd900",
   "icons": [
     {

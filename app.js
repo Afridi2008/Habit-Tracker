@@ -328,7 +328,7 @@ function renderLogin(app) {
 
         <div class="login-brand">
           <div class="login-logo neu-raised">
-            <i class="fa-solid fa-shield-halved fa-lg"></i>
+           <img src="logo.PNG" width="60" height="60" alt="Logo" />
           </div>
           <div class="login-title">DISCIPLINE <p class="login-p">– Habit Tracker</p></div>
           <div class="login-subtitle"><em>Your daily habit companion</em></div>

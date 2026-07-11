@@ -1,5 +1,5 @@
 {
-  "background_color": "#ffd900",
+  "background_color": "#1b2a80",
   "dir": "ltr",
   "display": "standalone",
   "name": "Sirat - Habit Tracker",
@@ -7,7 +7,7 @@
   "scope": "/Habit-Tracker/",
   "short_name": "Sirat",
   "start_url": "/Habit-Tracker",
-  "theme_color": "#ffffff",
+  "theme_color": "#ffd900",
   "icons": [
     {
       "src": "https://afridi2008.github.io/Habit-Tracker/logo2.PNG",

@@ -1,0 +1,33 @@
+{
+  "background_color": "#ffd900",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Sirat - Habit Tracker",
+  "orientation": "portrait",
+  "scope": "/Habit-Tracker/",
+  "short_name": "Sirat",
+  "start_url": "/Habit-Tracker",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://afridi2008.github.io/Habit-Tracker/logo2.PNG",
+      "type": "image/png",
+      "sizes": "192x192",
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 192,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": true
+    }
+  ],
+  "id": "/sirat",
+  "description": "Sirat helps users build and maintain daily habits with an intuitive and distraction-free tracking experience.",
+  "lang": "en",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
+  ]
+}

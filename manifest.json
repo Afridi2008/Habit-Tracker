@@ -10,17 +10,17 @@
   "theme_color": "#ffd900",
   "icons": [
     {
-      "src": "https://afridi2008.github.io/Habit-Tracker/logo2.PNG",
+      "src": "https://afridi2008.github.io/Habit-Tracker/icon-512.PNG",
       "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "isSquare": true,
       "isPng": true,
       "isWebp": false,
       "isJpg": false,
       "width": 192,
-      "is512x512": false,
+      "is512x512": true,
       "is256x256": false,
-      "is192x192": true
+      "is192x192": false
     }
   ],
   "id": "/sirat",

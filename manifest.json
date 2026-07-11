@@ -29,5 +29,19 @@
   "display_override": [
     "fullscreen",
     "window-controls-overlay"
+  ],
+  
+  "screenshots": [
+    {
+      "src": "/Habit-Tracker/desktop.PNG",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/Habit-Tracker/mobile.PNG",
+      "sizes": "720x1280",
+      "type": "image/png"
+    }
   ]
 }

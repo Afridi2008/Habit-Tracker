@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#d4d9ee" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>DISCIPLINE – Habit Tracker</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Page content injected here -->
+  <div id="app"></div>
+
+  <!-- Bottom navigation (shown when logged in) -->
+  <nav id="bottom-nav" class="bottom-nav hidden">
+    <a class="nav-item" data-page="dashboard">
+      <i class="fa-solid fa-grip"></i>
+      <span>Dashboard</span>
+    </a>
+    <a class="nav-item" data-page="fitness">
+      <i class="fa-solid fa-dumbbell"></i>
+      <span>Fitness</span>
+    </a>
+    <a class="nav-item" data-page="diet">
+      <i class="fa-solid fa-bowl-food"></i>
+      <span>Diet</span>
+    </a>
+    <a class="nav-item" data-page="prayer">
+      <i class="fa-solid fa-moon"></i>
+      <span>Prayer</span>
+    </a>
+    <a class="nav-item" data-page="learning">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Learning</span>
+    </a>
+  </nav>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

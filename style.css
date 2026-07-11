@@ -103,9 +103,10 @@ input::placeholder { color: var(--fg-light); }
 #app { position: relative; z-index: 1; }
 
 .page {
-  max-width: 430px;
+  max-width: 520px;
+  width: min(100%, 520px);
   margin: 0 auto;
-  padding: 32px 16px 32px;
+  padding: 32px 18px 32px;
   animation: fadeSlide 0.25s ease;
 }
 
@@ -122,14 +123,20 @@ input::placeholder { color: var(--fg-light); }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 36px 18px;
 }
 
-.login-inner { width: 100%; max-width: 360px; background-color: #10194e; padding: 10%; border-radius: 30px; }
+.login-inner {
+  width: 100%;
+  max-width: 420px;
+  background-color: #10194e;
+  padding: 28px;
+  border-radius: 30px;
+}
 
 .login-brand {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 .login-logo {
   width: 76px; height: 76px;
@@ -138,7 +145,7 @@ input::placeholder { color: var(--fg-light); }
   margin: 0 auto 16px;
   font-size: 30px;
   color: var(--primary);
-  background-color: var(--yel);
+  background-color: var(--primary);
 }
 .login-title {
   font-size: 28px;
@@ -284,16 +291,17 @@ input::placeholder { color: var(--fg-light); }
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 18px;
   margin-bottom: 20px;
 }
 .dash-date  { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-muted); margin-bottom: 3px; }
-.dash-greet { font-size: 22px; font-weight: 800; letter-spacing: -0.3px; color: #ffd900;}
+.dash-greet { font-size: clamp(20px, 5vw, 28px); font-weight: 800; letter-spacing: -0.3px; color: #ffd900; }
 
 .btn-logout {
   display: flex; align-items: center; gap: 6px;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: var(--radius-sm);
-  font-size: 11px; font-weight: 700;
+  font-size: 12px; font-weight: 700;
   color: red;
   background-color: rgb(255, 255, 255);
   transition: all 0.18s;
@@ -430,14 +438,14 @@ input::placeholder { color: var(--fg-light); }
   font-size: 24px;
   color: var(--primary);
 }
-.section-page-title { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 4px;color: #ffd900; }
+.section-page-title { font-size: clamp(24px, 5vw, 32px); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 4px; color: #ffd900; }
 .section-page-date  { font-size: 13px; color: var(--fg-muted); }
 
 .btn-edit {
   position: absolute;
   top: 8px; right: 0;
-  display: flex; align-items: center; gap: 5px;
-  padding: 8px 12px;
+  display: flex; align-items: center; gap: 6px;
+  padding: 9px 14px;
   border-radius: var(--radius-sm);
   font-size: 12px; font-weight: 700;
   color: var(--primary);
@@ -621,10 +629,40 @@ input::placeholder { color: var(--fg-light); }
 @media (min-width: 430px) {
   body { display: flex; flex-direction: column; align-items: center; }
   #app { width: 100%; }
-  .bottom-nav { max-width: 430px; left: 50%; transform: translateX(-50%); }
+  .bottom-nav { max-width: 520px; left: 50%; transform: translateX(-50%); }
+}
+
+@media (max-width: 480px) {
+  .page { padding: 24px 14px 32px; }
+  .login-inner { padding: 24px; }
+  .dash-topbar { flex-wrap: wrap; align-items: flex-start; }
+  .btn-logout { width: 100%; justify-content: center; }
+  .score-hero { padding: 24px 18px; }
+  .score-hero-num { font-size: clamp(48px, 10vw, 62px); }
+  .score-grid { grid-template-columns: 1fr; }
+  .chart-card { padding: 18px; }
+  .chart-canvas { height: 220px !important; }
+  .section-card { padding: 14px 16px; }
+  .section-label { font-size: 14px; }
+  .section-score { font-size: 13px; }
+  .section-page-header { padding-top: 0; }
+  .btn-edit { position: static; margin: 8px auto 0; }
+  .habit-row { flex-wrap: wrap; gap: 10px; }
+  .habit-label { width: 100%; }
+  .add-row, .edit-row { flex-direction: column; align-items: stretch; }
+  .add-row input, .edit-row input { width: 100%; }
+  .btn-add, .btn-delete { width: 100%; }
 }
 
 @media (max-width: 360px) {
   .nav-item span { display: none; }
   .nav-item { padding: 4px 8px; }
+}
+
+@media (min-width: 768px) {
+  .page { max-width: 640px; padding: 36px 22px 36px; }
+  .score-grid { gap: 16px; }
+  .chart-canvas { height: 240px !important; }
+  .section-card { padding: 18px 20px; }
+  .score-hero { padding: 30px 22px; }
 }

@@ -4,9 +4,9 @@
   "display": "standalone",
   "name": "Sirat - Habit Tracker",
   "orientation": "portrait",
+  "start_url": "/Habit-Tracker/",
   "scope": "/Habit-Tracker/",
   "short_name": "Sirat",
-  "start_url": "/",
   "theme_color": "#ffd900",
   "icons": [
     {

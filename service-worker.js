@@ -3,7 +3,7 @@ const urlsToCache = [
   "/",
   "/index.html",
   "/style.css",
-  "/script.js"
+  "/app.js"
 ];
 
 // Install
